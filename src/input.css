@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "iransansL";
+        src: url(/public/fonts/IRANSansDN_Light.ttf), format("truetype");
+    }
+    @font-face {
+        font-family: "iransans";
+        src: url(/public/fonts/IRANSansDN.ttf), format("truetype");
+    }
+    @font-face {
+        font-family: "iransansB";
+        src: url(/public/fonts/IRANSansDN-Bold.ttf), format("truetype");
+    }
+    @font-face {
+        font-family: "estedad";
+        src: url(/public/fonts/Estedad-Regular.ttf), format("truetype");
+    }
+    @font-face {
+        font-family: "estedadSB";
+        src: url(/public/fonts/Estedad-SemiBold.ttf), format("truetype");
+    }
+}
+
+@layer utilities{
+    .bgComponent{
+        background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(228,234,255,1) 50%);
+    }
+}

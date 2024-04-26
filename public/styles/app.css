@@ -446,6 +446,36 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: "iransansL";
+
+  src: url(/public/fonts/IRANSansDN_Light.ttf), format("truetype");
+}
+
+@font-face {
+  font-family: "iransans";
+
+  src: url(/public/fonts/IRANSansDN.ttf), format("truetype");
+}
+
+@font-face {
+  font-family: "iransansB";
+
+  src: url(/public/fonts/IRANSansDN-Bold.ttf), format("truetype");
+}
+
+@font-face {
+  font-family: "estedad";
+
+  src: url(/public/fonts/Estedad-Regular.ttf), format("truetype");
+}
+
+@font-face {
+  font-family: "estedadSB";
+
+  src: url(/public/fonts/Estedad-SemiBold.ttf), format("truetype");
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -554,15 +584,286 @@ video {
   --tw-contain-style:  ;
 }
 
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 976px) {
+  .container {
+    max-width: 976px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.row-span-1 {
+  grid-row: span 1 / span 1;
+}
+
+.row-span-2 {
+  grid-row: span 2 / span 2;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
+}
+
+.row-span-4 {
+  grid-row: span 4 / span 4;
+}
+
+.row-span-7 {
+  grid-row: span 7 / span 7;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-9 {
+  height: 2.25rem;
+}
+
+.h-\[320px\] {
+  height: 320px;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[calc\(1080px\)\] {
+  height: calc(1080px);
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-\[1fr_1fr_360px\] {
+  grid-template-columns: 1fr 1fr 360px;
+}
+
+.grid-rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+}
+
+.grid-rows-7 {
+  grid-template-rows: repeat(7, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
   justify-content: center;
 }
 
-.text-red-800 {
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-\[32px\] {
+  border-radius: 32px;
+}
+
+.rounded-\[64px\] {
+  border-radius: 64px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.bg-\[\#F2F4FF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 244 255 / var(--tw-bg-opacity));
+}
+
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-violet-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 139 250 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.font-estedad {
+  font-family: estedad;
+}
+
+.font-iransans {
+  font-family: iransans;
+}
+
+.font-iransansB {
+  font-family: iransansB;
+}
+
+.font-estedadSB {
+  font-family: estedadSB;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-\[\#3730A3\] {
   --tw-text-opacity: 1;
-  color: rgb(153 27 27 / var(--tw-text-opacity));
+  color: rgb(55 48 163 / var(--tw-text-opacity));
+}
+
+.bgComponent{
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(228,234,255,1) 50%);
 }
