@@ -5,7 +5,7 @@ module.exports = {
     extend: {},
     container: {
       center: true,
-      padding: "4rem",
+      padding: "8rem",
     },
     fontFamily: {
       "iransansL": "iransansL",
