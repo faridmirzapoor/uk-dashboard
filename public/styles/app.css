@@ -705,6 +705,26 @@ video {
   height: 100%;
 }
 
+.max-h-\[\] {
+  max-height: ;
+}
+
+.max-h-\[100px\] {
+  max-height: 100px;
+}
+
+.max-h-\[80px\] {
+  max-height: 80px;
+}
+
+.max-h-\[90px\] {
+  max-height: 90px;
+}
+
+.max-h-\[px\] {
+  max-height: px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -721,8 +741,56 @@ video {
   width: 100%;
 }
 
+.min-w-\[115px\] {
+  min-width: 115px;
+}
+
+.min-w-\[100px\] {
+  min-width: 100px;
+}
+
+.min-w-\[px\] {
+  min-width: px;
+}
+
+.min-w-\[80px\] {
+  min-width: 80px;
+}
+
+.min-w-\[8px\] {
+  min-width: 8px;
+}
+
+.min-w-\[85px\] {
+  min-width: 85px;
+}
+
+.min-w-\[90px\] {
+  min-width: 90px;
+}
+
+.max-w-\[115px\] {
+  max-width: 115px;
+}
+
+.max-w-\[95px\] {
+  max-width: 95px;
+}
+
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.max-w-\[105px\] {
+  max-width: 105px;
+}
+
 .flex-grow {
   flex-grow: 1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .grid-cols-\[4fr_4fr_3fr\] {
@@ -739,6 +807,10 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -807,6 +879,16 @@ video {
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .font-estedad {
