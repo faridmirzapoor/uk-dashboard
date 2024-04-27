@@ -588,8 +588,8 @@ video {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
 
 @media (min-width: 480px) {
@@ -668,6 +668,11 @@ video {
   grid-row: span 7 / span 7;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -704,20 +709,24 @@ video {
   height: 2.25rem;
 }
 
-.h-\[320px\] {
-  height: 320px;
-}
-
 .h-\[50px\] {
   height: 50px;
 }
 
-.h-\[calc\(1080px\)\] {
-  height: calc(1080px);
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-\[1000px\] {
+  height: 1000px;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
+.min-h-\[\] {
+  min-height: ;
 }
 
 .w-10 {
@@ -736,16 +745,12 @@ video {
   width: 100%;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.flex-grow {
+  flex-grow: 1;
 }
 
-.grid-cols-\[1fr_1fr_360px\] {
-  grid-template-columns: 1fr 1fr 360px;
-}
-
-.grid-rows-5 {
-  grid-template-rows: repeat(5, minmax(0, 1fr));
+.grid-cols-\[4fr_4fr_3fr\] {
+  grid-template-columns: 4fr 4fr 3fr;
 }
 
 .grid-rows-7 {
@@ -754,6 +759,10 @@ video {
 
 .flex-row {
   flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .flex-col-reverse {
@@ -801,11 +810,6 @@ video {
   background-color: rgb(242 244 255 / var(--tw-bg-opacity));
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
 .bg-violet-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(167 139 250 / var(--tw-bg-opacity));
@@ -833,13 +837,12 @@ video {
   padding-right: 2rem;
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .font-estedad {
   font-family: estedad;
+}
+
+.font-estedadSB {
+  font-family: estedadSB;
 }
 
 .font-iransans {
@@ -848,10 +851,6 @@ video {
 
 .font-iransansB {
   font-family: iransansB;
-}
-
-.font-estedadSB {
-  font-family: estedadSB;
 }
 
 .text-xl {
@@ -866,4 +865,11 @@ video {
 
 .bgComponent{
   background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(228,234,255,1) 50%);
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-900 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  }
 }
