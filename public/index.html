@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="./scripts/calendar.js" defer></script>
     <title>Document</title>
 </head>
 <body class="bg-white">
@@ -110,7 +112,7 @@
                         </div>
 
                         <!-- FUTURE -->
-                        <div class="">
+                        <div class="mb-12">
                             <div class="flex flex-col justify-between text-center mt-8">
                                 <div class="mx-auto w-full h-full grid grid-cols-[3fr_1fr_3fr] items-center font-estedad text-sm">
                                     <div class="flex justify-end">
@@ -153,7 +155,29 @@
                         </div>
                         </div>
                     </div> 
-                    <div class="row-span-5"></div>
+                    <div class="row-span-5">
+                        <div class="wrapper">
+                            <time>
+                              <p class="current-date"></p>
+                              <div class="icons flex">
+                                  <span id="next" class="material-symbols-rounded">chevron_right</span>
+                                  <span id="prev" class="material-symbols-rounded">chevron_left</span>
+                              </div>
+                            </time>
+                            <div class="calendar">
+                              <ul class="weeks font-estedad text-xs">
+                                <li class="p-3">ی</li>
+                                <li class="p-3">د</li>
+                                <li class="p-3">س</li>
+                                <li class="p-3">چ</li>
+                                <li class="p-3">پ</li>
+                                <li class="p-3">ج</li>
+                                <li class="p-3">ش</li>
+                              </ul>
+                              <ul class="days font-estedad text-lg"></ul>
+                            </div>
+                          </div>
+                    </div>
                 </div>
 
                 <!-- کار های روزانه -->
@@ -323,6 +347,16 @@
             </div>
     </main>
     <footer></footer>
+    <div class="engToPer">
+        <script type="text/javascript">
+            var replaceDigits = function() {
+                var map = ["&\#1776;","&\#1777;","&\#1778;","&\#1779;","&\#1780;","&\#1781;","&\#1782;","&\#1783;","&\#1784;","&\#1785;"]
+                document.body.innerHTML = document.body.innerHTML.replace(/\d(?=[^<>]*(<|$))/g, function($0) { return map[$0]});
+            }
+            window.onload = replaceDigits;
+        </script>
+    </div>
+    
     <!-- <script src="../path/to/flowbite/dist/datepicker.js"></script> -->
 </body>
 </html>
