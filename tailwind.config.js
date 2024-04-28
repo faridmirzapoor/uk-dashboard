@@ -5,14 +5,16 @@ module.exports = {
     extend: {},
     container: {
       center: true,
-      padding: "8rem",
+      padding: "4rem",
     },
     fontFamily: {
       "iransansL": "iransansL",
       "iransans": "iransans",
       "iransansB": "iransansB",
+      "estedadL": "estedadL",
       "estedad": "estedad",
       "estedadSB": "estedadSB",
+      "yekanbakh": "yekanbakh",
     },
     screens: {
       'large': '1440px',
