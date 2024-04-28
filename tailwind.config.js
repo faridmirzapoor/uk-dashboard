@@ -13,6 +13,7 @@ module.exports = {
       "iransansB": "iransansB",
       "estedadL": "estedadL",
       "estedad": "estedad",
+      "estedadM": "estedadM",
       "estedadSB": "estedadSB",
       "yekanbakh": "yekanbakh",
     },

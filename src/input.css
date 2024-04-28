@@ -31,6 +31,10 @@
         font-family: "yekanbakh";
         src: url(/public/fonts/YekanBakh-Regular.ttf), format("truetype");
     }
+    @font-face {
+        font-family: "estedadM";
+        src: url(/public/fonts/Estedad-Medium.ttf), format("truetype");
+    }
 }
 
 @layer utilities{
